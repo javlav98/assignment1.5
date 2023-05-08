@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropbox login Replica</title>
+    <style>
+    .navbar {
+      color: #000000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .loginButton {
+        display: flex;
+        justify-content: center;
+        width: 104%;
+        border: 1px solid;
+        background-color: rgb(0, 85, 255);
+        color: white;
+        
+    }
+
+    .container {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .emailInput {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+    .passwordInput {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+    hr {
+      background-color: gray;
+      width: 100%;
+    }
+
+    .linkz {
+        display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar__logo">Logo</div>
+    <button class="navbar__button">Sign Up</button>
+    </nav>
+    <hr>
+
+    <div class="container">
+    <form>
+    <div class="linkz"><p>Login</p><a> or create an account</a></div>
+    <input type="text" placeholder="Email" class="emailInput">
+    <input type="password" placeholder="Password" class="passwordInput">
+    <input type="submit" value="Log In" class="loginButton">
+    </form>
+    </div>
+
+</body>
+</html>
