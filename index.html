@@ -6,51 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox login Replica</title>
     <style>
-    .navbar {
-      color: #000000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .loginButton {
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      form {
         display: flex;
         justify-content: center;
-        width: 104%;
-        border: 1px solid;
-        background-color: rgb(0, 85, 255);
-        color: white;
-        
-    }
-
-    .container {
+        align-items: center;
+        height: 500px;
+        flex-direction: column;
+      }
+      .navbar {
         display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .emailInput {
-        display: block;
-        margin-bottom: 10px;
-        width: 100%;
-        border: 1px solid #ddd;
-    }
-    .passwordInput {
-        display: block;
-        margin-bottom: 10px;
-        width: 100%;
-        border: 1px solid #ddd;
-    }
-    hr {
-      background-color: gray;
-      width: 100%;
-    }
-
-    .linkz {
-        display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding: 0 20px;
+        background-color: #fff;
+      }
+      .google {
+        width: 300px;
+        height: 40px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+      .apple {
+        width: 300px;
+        height: 40px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+      .emailInput {
+        width: 300px;
+        height: 40px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+      .loginButton {
+        width: 300px;
+        height: 40px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 0 10px;
+        background-color: #0070e0;
+        color: #fff;
+        font-weight: 700;
+      }
+      hr.div1{
+        width: 300px;
+        margin: 10px 0;
+      }
     </style>
 </head>
 <body>
@@ -60,14 +74,14 @@
     </nav>
     <hr>
 
-    <div class="container">
     <form>
-    <div class="linkz"><p>Login</p><a> or create an account</a></div>
+    <div class="linkz"><p>Login</p><a href="https://www.dropbox.com/login"> or create an account</a></div>
+    <input type="text" placeholder="Continue with Google" class="google">
+    <input type="text" placeholder="Continue with Apple" class="apple">
+    <hr class="div1">
     <input type="text" placeholder="Email" class="emailInput">
-    <input type="password" placeholder="Password" class="passwordInput">
-    <input type="submit" value="Log In" class="loginButton">
+    <input type="submit" value="Continue" class="loginButton">
     </form>
-    </div>
 
 </body>
 </html>
