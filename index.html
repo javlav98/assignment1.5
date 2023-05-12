@@ -58,15 +58,47 @@
         color: #fff;
         font-weight: 700;
       }
-      hr {
-        border: solid 0.5px #e4e4e4;
+      form hr {
+        width: 350px;
+        margin: 10px 0;
+        border: 1px solid #e4e4e4;
       }
+      .linkz { 
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+      }
+      .linkz p {
+        margin-right: 150px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+      }
+
+      .linkz a {
+        text-decoration: none;
+        color: #0070e0;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      }
+
+      button {
+        width: 100px;
+        height: 40px;
+        border: none;
+        background-color: #fff;
+        color: #0070e0;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      }
+      .navbar div {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      }
+
 
     </style>
 </head>
 <body>
     <nav class="navbar">
-    <div class="navbar__logo">Logo</div>
+    <div class="navbar__logo">Dropbox</div>
     <button class="navbar__button">Sign Up</button>
     </nav>
     <hr>
@@ -75,7 +107,7 @@
     <div class="linkz"><p>Login</p><a href="https://www.dropbox.com/login"> or create an account</a></div>
     <input type="text" placeholder="Continue with Google" class="google">
     <input type="text" placeholder="Continue with Apple" class="apple">
-    <div class="divider"><span>Divider text</span></div>
+    <hr>
     <input type="text" placeholder="Email" class="emailInput">
     <input type="submit" value="Continue" class="loginButton">
     </form>
